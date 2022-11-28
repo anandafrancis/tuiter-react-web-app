@@ -1,7 +1,11 @@
-html {background-color: black}
+
 
 .rounded-corners-all-around {
-    border-radius: 50px;
+    border-radius: 100px;
+}
+
+.circle-shape {
+    border-radius: 24px;
 }
 
 .border-dark-gray {
@@ -13,7 +17,7 @@ html {background-color: black}
 
 .float-right {
     float: right;
-    height: 100px;
+    position: center;
 }
 
 .pos-relative-nudge-left{
@@ -23,6 +27,7 @@ html {background-color: black}
 
 
 .fg-color-white { color: white; }
+.fg-color-black { color: black; }
 .fg-color-highlight-blue { color: #1da0f2; }
 .fg-color-gray { color: #6e767d; }
 

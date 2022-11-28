@@ -2,183 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Explore</title>
-
-    <link href="index.css"
-          rel="stylesheet"/>
+    <title>Explore A4</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
 
 </head>
 <body>
-<!-- <a href="../navigation.html">Back</a>
-<h1>Tuiter</h1>
-<h2>Explore</h2>
--->
-<input size= 70%
-       class="rounded-corners-all-around bg-color-dark-gray fg-color-white"
-       type="search"
-       placeholder="Search Twitter"
-       id="text-fields-search"/>
-
-<a href = "explore-settings.html" class = "float-right pos-relative-nudge-left"<span>&#9881;</span> <a/>
-
-<div class="grid-row">
-    <div class="grid-col-sixth-page">
-        <p style="font-size: 15px" > <a href="for-you.html" class = "fg-color-highlight-blue padding-fat border-bottom-highlight">For You</a></p>
-
+<div class="container">
+  <!-- main content goes here -->
+    <br>
+  <div class="row">
+    <div class="d-none d-sm-block col-sm-2 col-md-4 col-lg-2 col-xl-2 col-xxl-3 text-white">
+        <ul class="list-group">
+            <i class="fab fa-home fa-hom fg-color-black"></i>
+            <i style="font-size: 1.25em" class="list-group-item fab fa-twitter"></i>
+            <li style="font-size: 1.25em" class="list-group-item fas fa-home fa-2x"> Home</li>
+            <li style="font-size: 1.25em" class="list-group-item active fas fa-hashtag "> Explore</li>
+            <li style="font-size: 1.25em" class="list-group-item fas fa-bell"> Notifications</li>
+            <li style="font-size: 1.25em" class="list-group-item fas fa-envelope"> Messages</li>
+            <li style="font-size: 1.25em" class="list-group-item fas fa-bookmark"> Bookmarks</li>
+            <li style="font-size: 1.25em" class="list-group-item fas fa-list"> Lists</li>
+            <li style="font-size: 1.25em" class="list-group-item fas fa-user"> Profile</li>
+            <li style="font-size: 1.25em" class="list-group-item fas fa-ellipsis-h"> More</li>
+            <br>
+            <button type="submit" class="btn btn-primary">Tweet</button>
+        </ul>
     </div>
-
-    <div class="grid-col-sixth-page">
-        <p style="font-size: 15px" > <a href="trending.html" class = "fg-color-gray padding-fat">Trending</a></p>
-    </div>
-
-    <div class="grid-col-sixth-page">
-        <p style="font-size: 15px" > <a href="covid-19.html" class = "fg-color-gray padding-fat">COVID-19</a></p>
-    </div>
-
-    <div class="grid-col-sixth-page">
-        <p style="font-size: 15px" > <a href="news.html" class = "fg-color-gray padding-fat">News</a></p>
-    </div>
-
-    <div class="grid-col-sixth-page">
-        <p style="font-size: 15px" > <a href="sports.html" class = "fg-color-gray padding-fat">Sports</a></p>
-    </div>
-
-    <div class="grid-col-sixth-page">
-        <p style="font-size: 15px" > <a href="entertainment.html" class = "fg-color-gray padding-fat">Entertainment</a></p>
-    </div>
-    <br/><br/><br/><br/>
-
-    <table>
-        <thead>
-        <tr>
-            <th> </th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td style="font-size: 13px" class = "fg-color-gray">Trending in Science</td>
-        </tr>
-        <tr>
-            <td style="font-size: 18px" class = "fg-color-white"><b>Starship</b></td>
-        </tr>
-        <tr>
-            <td style="font-size: 13px" class = "fg-color-gray">55.5k Tweets</td>
-        </tr>
-        </tbody>
-    </table>
-    <br/>
-
-
-    <table>
-        <thead>
-        <tr>
-            <th> </th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td style="font-size: 13px" class = "fg-color-gray">Sports Trending</td>
-        </tr>
-        <tr>
-            <td style="font-size: 18px" class="fg-color-white"><b>Joe Rogan</b></td>
-        </tr>
-        <tr>
-            <td style="font-size: 13px" class = "fg-color-gray">5,218 Tweets</td>
-        </tr>
-        </tbody>
-    </table>
-    <br/>
-
-    <div>
-        <div>
-            <a class = "float-right pos-relative-nudge-left"<span><img class="rounded-corners-all-around dimension-square"      src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/></span> <a/>
-            <table height="100px">
-                <thead>
-                <tr>
-                    <th> </th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td style="font-size: 15px" class = "fg-color-white">The New York Times</td>
-                </tr>
-                <tr>
-                    <td style="font-size: 15px" class = "fg-color-white"><b>CNN's Cuomo conundrum: A star anchor with a brother in trouble</b></td>
-                </tr>
-                </tbody>
-            </table>
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8 col-xl-7 col-xxl-6 text-white">
+        <div class="input-group mb-3">
+            <span class="input-group-text fas fa-search rounded-corners-all-around "></span>
+            <input type="text" class="form-control" placeholder="Search Twitter">
+            <span class =" input-group-text fas fa-cog fg-color-highlight-blue fa-2x"></span>
         </div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="for-you.html">For You</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="trending.html">Trending</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sports.html" >Sports</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="entertainment.html" >Entertainment</a>
+            </li>
+        </ul>
+        <br>
+        <img src="../../images/starship.jpeg"
+             class="card-img-top" alt="...">
+
     </div>
+    <div class="d-none d-none d-none d-lg-block col-lg-2 col-xl-3 col-xxl-3">
+        <ul class="list-group">
+            <h6 class="list-group-item">Who To Follow</h6>
+            <li class="list-group-item">
+                <img class="circle-shape" src="../../images/java.png"
+                     width="38px"
+                     height="38px">
+                <span> Java <span/>
+                    <button type="submit" class="btn btn-primary float-right rounded-corners-all-around">Follow</button>
 
-    <br/>
+            </li>
+            <li class="list-group-item">
+                <img class="circle-shape" src="../../images/rl-space.png"
+                     width="38px"
+                     height="38px">
+                <span> Relativity Space <span/>
+                    <button type="submit" class="btn btn-primary float-right rounded-corners-all-around">Follow</button>
 
-    <div>
-        <a class = "float-right pos-relative-nudge-left"<span><img class="rounded-corners-all-around dimension-square"      src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/></span> <a/>
-        <table height="100px">
-            <thead>
-            <tr>
-                <th> </th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td style="font-size: 15px" class = "fg-color-gray">COVID-19</td>
-            </tr>
-            <tr>
-                <td style="font-size: 15px" class="fg-color-white"><b>COVID-19: News and updates for Massachusetts</b></td>
-            </tr>
-            </tbody>
-        </table>
+
+            </li>
+            <li class="list-group-item">
+                <img class="circle-shape" src="../../images/virgin.webp"
+                     width="38px"
+                     height="38px">
+                <span>Virgin Galactic<span/>
+                    <button type="submit" class="btn btn-primary float-right rounded-corners-all-around">Follow</button>
+
+
+            </li>
+            <li class="list-group-item">
+                <img class="circle-shape" src="../../images/nasa.png"
+                     width="38px"
+                     height="38px">
+                <span>NASA<span/>
+                    <button type="submit" class="btn btn-primary float-right rounded-corners-all-around">Follow</button>
+
+
+            </li>
+            <li class="list-group-item">
+                <img class="circle-shape" src="../../images/tesla.png"
+                     width="38px"
+                     height="38px">
+                <span> Tesla <span/>
+                    <button type="submit" class="btn btn-primary float-right rounded-corners-all-around">Follow</button>
+
+
+            </li>
+        </ul>
     </div>
-
-    <br/>
-
-    <div>
-        <a class = "float-right pos-relative-nudge-left"<span><img class="rounded-corners-all-around dimension-square"      src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/></span> <a/>
-        <table  height="100px">
-            <thead>
-            <tr>
-                <th> </th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td style="font-size: 15px" class="fg-color-white">Bloomberg Opinion</td>
-            </tr>
-            <tr>
-                <td style="font-size: 15px" class="fg-color-white"><b>Thinking about getting a booster? Read this first.</b></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <br/>
-
-
-
-    <table>
-        <thead>
-        <tr>
-            <th> </th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td style="font-size: 13px" class = "fg-color-gray">Trending in United States</td>
-        </tr>
-        <tr>
-            <td style="font-size: 18px" class="fg-color-white"><b>Wonder Bread</b></td>
-        </tr>
-        <tr>
-            <td style="font-size: 13px" class = "fg-color-gray">1,259 Tweets</td>
-        </tr>
-        </tbody>
-    </table>
-
-
-
+  </div>
 </div>
-
 
 </body>
 </html>
