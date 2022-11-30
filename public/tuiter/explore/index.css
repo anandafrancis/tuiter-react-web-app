@@ -22,7 +22,7 @@
 
 .pos-relative-nudge-left{
     position: relative;
-    right: 12px;
+    right: 23px;
 }
 
 
@@ -62,3 +62,22 @@
     width: 100px;
     height: 100px;
 }
+
+.container {
+    position: relative;
+    color: white;
+}
+
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 12px;
+}
+
+.btn-work{ text-align: center; }
+
+
+
+
+

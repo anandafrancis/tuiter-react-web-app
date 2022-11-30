@@ -11,9 +11,16 @@
 <body>
 <div class="container">
   <!-- main content goes here -->
+    <h2>Hiding and showing responsive content</h2>
+    <div class="d-block d-sm-none fa-2x fg-color-black">XS</div>
+    <div class="d-none d-sm-block d-md-none fa-2x fg-color-black">S</div>
+    <div class="d-none d-md-block d-lg-none fa-2x fg-color-black">M</div>
+    <div class="d-none d-lg-block d-xl-none fa-2x fg-color-black">L</div>
+    <div class="d-none d-xl-block d-xxl-none fa-2x fg-color-black">XL</div>
+    <div class="d-none d-xxl-block fa-2x fg-color-black">XXL</div>
     <br>
   <div class="row">
-    <div class="d-none d-sm-block col-sm-2 col-md-4 col-lg-2 col-xl-2 col-xxl-3 text-white">
+    <div class="d-none d-xl-block col-xl-2 col-xxl-3 text-white">
         <ul class="list-group">
             <i class="fab fa-home fa-hom fg-color-black"></i>
             <i style="font-size: 1.25em" class="list-group-item fab fa-twitter"></i>
@@ -29,7 +36,23 @@
             <button type="submit" class="btn btn-primary">Tweet</button>
         </ul>
     </div>
-    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8 col-xl-7 col-xxl-6 text-white">
+      <div class="col-xs-1 col-sm-2 col-md-2 col-lg-1 d-xl-none text-white">
+          <ul class="list-group">
+              <i class="fab fa-home fa-hom fg-color-black"></i>
+              <i style="font-size: 1.25em" class="list-group-item fab fa-twitter"></i>
+              <li style="font-size: 1.25em" class="list-group-item fas fa-home fa-2x"></li>
+              <li style="font-size: 1.25em" class="list-group-item active fas fa-hashtag "></li>
+              <li style="font-size: 1.25em" class="list-group-item fas fa-bell"></li>
+              <li style="font-size: 1.25em" class="list-group-item fas fa-envelope"></li>
+              <li style="font-size: 1.25em" class="list-group-item fas fa-bookmark"></li>
+              <li style="font-size: 1.25em" class="list-group-item fas fa-list"></li>
+              <li style="font-size: 1.25em" class="list-group-item fas fa-user"></li>
+              <li style="font-size: 1.25em" class="list-group-item fas fa-ellipsis-h"></li>
+              <br>
+              <button type="submit" class="btn btn-primary">Tweet</button>
+          </ul>
+      </div>
+    <div class="d-none d-md-block col-md-10 col-lg-8 col-xl-6 col-xxl-6 text-white">
         <div class="input-group mb-3">
             <span class="input-group-text fas fa-search rounded-corners-all-around "></span>
             <input type="text" class="form-control" placeholder="Search Twitter">
@@ -53,56 +76,365 @@
             </li>
         </ul>
         <br>
-        <img src="../../images/starship.jpeg"
-             class="card-img-top" alt="...">
+        <div class="container">
+            <img src="../../images/starship.jpeg" style="width:108%;" class="pos-relative-nudge-left">
+            <div style = "font-size: 36px" class="bottom-left"><b>Space X's Starship</b></div>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <span>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <span class="fg-color-gray">Web Development</span>
+                            </div>
+                            <div class="row">
+                                <span> <b>ReactJS</b> <i class="fas fa-check-circle"></i>
+                                <span class="fg-color-gray">- 2h</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-11">
+                                    <span> <b>React.js is a component based front end library that makes it very
+                                        easy to build Single PageApplications or SPAs </b>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-white">
+                            <img class="rounded-corners-all-around float-right"
+                                 src="../../images/react.png"
+                                 width="90px"
+                                 height="90px">
+                        </div>
+                    </div>
+                    <span/>
+            </li>
+            <li class="list-group-item">
+                <span>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <span> <b>Javascript</b> <i class="fas fa-check-circle"></i>
+                                <span class="fg-color-gray">- 2h</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-11">
+                                    <span> <b>Javascript is a programming language that can run on
+                                    browsers as well as desktops </b>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="fg-color-gray">123K Tweets</span>
+                            </div>
+                        </div>
+                        <div class="col-1 text-white">
+                            <img class="rounded-corners-all-around float-right"
+                                 src="../../images/javascript.png"
+                                 width="90px"
+                                 height="90px">
+                        </div>
+                    </div>
+                    <span/>
+            </li>
+            <li class="list-group-item">
+                <span>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <span class="fg-color-gray">Web Development</span>
+                            </div>
+                            <div class="row">
+                                <span> <b>jQuery</b>
+                                <span class="fg-color-gray">- 2h</span>
+                            </div>
+                            <div class="row">
+                                <span class="fg-color-gray">123K Tweets</span>
+                            </div>
+                        </div>
+                        <div class="col-1 text-white">
+                            <img class="rounded-corners-all-around float-right"
+                                 src="../../images/jquery.webp"
+                                 width="90px"
+                                 height="90px">
+                        </div>
+                    </div>
+                    <span/>
+            </li>
+            <li class="list-group-item">
+                <span>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <span class="fg-color-gray">Web Development</span>
+                            </div>
+                            <div class="row">
+                                <span> <b>NodeJs</b> <i class="fas fa-check-circle"></i>
+                                <span class="fg-color-gray">- 2h</span>
+                            </div>
+                            <div class="row">
+                                <span class="fg-color-gray">123K Tweets</span>
+                            </div>
+                        </div>
+                        <div class="col-1 text-white">
+                            <img class="rounded-corners-all-around float-right"
+                                 src="../../images/js.webp"
+                                 width="90px"
+                                 height="90px">
+                        </div>
+                    </div>
+                    <span/>
+            </li>
+        </ul>
+
 
     </div>
-    <div class="d-none d-none d-none d-lg-block col-lg-2 col-xl-3 col-xxl-3">
+      <div class="col-xs-11 col-sm-10 d-md-none text-white">
+          <div class="input-group mb-3">
+              <span class="input-group-text fas fa-search rounded-corners-all-around "></span>
+              <input type="text" class="form-control" placeholder="Search Twitter">
+              <span class =" input-group-text fas fa-cog fg-color-highlight-blue fa-2x"></span>
+          </div>
+          <ul class="nav nav-tabs">
+              <li class="nav-item">
+                  <a class="nav-link active" href="for-you.html">For You</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="trending.html">Trending</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="sports.html" >Sports</a>
+              </li>
+          </ul>
+          <br>
+          <div class="container">
+              <img src="../../images/starship.jpeg" style="width:108%;" class="pos-relative-nudge-left">
+              <div style = "font-size: 36px" class="bottom-left"><b>Space X's Starship</b></div>
+          </div>
+          <ul class="list-group">
+              <li class="list-group-item">
+                <span>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <span class="fg-color-gray">Web Development</span>
+                            </div>
+                            <div class="row">
+                                <span> <b>ReactJS</b> <i class="fas fa-check-circle"></i>
+                                <span class="fg-color-gray">- 2h</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-11">
+                                    <span> <b>React.js is a component based front end library that makes it very
+                                        easy to build Single PageApplications or SPAs </b>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-white">
+                            <img class="rounded-corners-all-around float-right"
+                                 src="../../images/react.png"
+                                 width="90px"
+                                 height="90px">
+                        </div>
+                    </div>
+                    <span/>
+              </li>
+              <li class="list-group-item">
+                <span>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <span> <b>Javascript</b> <i class="fas fa-check-circle"></i>
+                                <span class="fg-color-gray">- 2h</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-11">
+                                    <span> <b>Javascript is a programming language that can run on
+                                    browsers as well as desktops </b>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="fg-color-gray">123K Tweets</span>
+                            </div>
+                        </div>
+                        <div class="col-1 text-white">
+                            <img class="rounded-corners-all-around float-right"
+                                 src="../../images/javascript.png"
+                                 width="90px"
+                                 height="90px">
+                        </div>
+                    </div>
+                    <span/>
+              </li>
+              <li class="list-group-item">
+                <span>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <span class="fg-color-gray">Web Development</span>
+                            </div>
+                            <div class="row">
+                                <span> <b>jQuery</b>
+                                <span class="fg-color-gray">- 2h</span>
+                            </div>
+                            <div class="row">
+                                <span class="fg-color-gray">123K Tweets</span>
+                            </div>
+                        </div>
+                        <div class="col-1 text-white">
+                            <img class="rounded-corners-all-around float-right"
+                                 src="../../images/jquery.webp"
+                                 width="90px"
+                                 height="90px">
+                        </div>
+                    </div>
+                    <span/>
+              </li>
+              <li class="list-group-item">
+                <span>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <span class="fg-color-gray">Web Development</span>
+                            </div>
+                            <div class="row">
+                                <span> <b>NodeJs</b> <i class="fas fa-check-circle"></i>
+                                <span class="fg-color-gray">- 2h</span>
+                            </div>
+                            <div class="row">
+                                <span class="fg-color-gray">123K Tweets</span>
+                            </div>
+                        </div>
+                        <div class="col-1 text-white">
+                            <img class="rounded-corners-all-around float-right"
+                                 src="../../images/js.webp"
+                                 width="90px"
+                                 height="90px">
+                        </div>
+                    </div>
+                    <span/>
+              </li>
+          </ul>
+
+
+      </div>
+    <div class="d-none d-none d-none d-lg-block col-lg-3 col-xl-4 col-xxl-3">
         <ul class="list-group">
-            <h6 class="list-group-item">Who To Follow</h6>
+            <li class="list-group-item"><b>Who To Follow</b></> </li>
             <li class="list-group-item">
-                <img class="circle-shape" src="../../images/java.png"
-                     width="38px"
-                     height="38px">
-                <span> Java <span/>
-                    <button type="submit" class="btn btn-primary float-right rounded-corners-all-around">Follow</button>
+                <span>
+                    <div class="row">
+                        <div class="col-2 text-white">
+                            <img class="circle-shape" src="../../images/java.png"
+                                 width="38px"
+                                 height="38px">
+                        </div>
+                        <div class="col">
+                            <span style="font-size: 14px;"><b>Java</b> <i class="fas fa-check-circle"></i> <br>
+                                @Java<span/>
+                        </div>
+                        <div class="col-1 text-white">
+                            <button type="submit"
+                                    class="btn btn-primary float-right rounded-corners-all-around">
+                                Follow
+                            </button>
 
+                        </div>
+
+                    <span/>
             </li>
             <li class="list-group-item">
-                <img class="circle-shape" src="../../images/rl-space.png"
-                     width="38px"
-                     height="38px">
-                <span> Relativity Space <span/>
-                    <button type="submit" class="btn btn-primary float-right rounded-corners-all-around">Follow</button>
+                <span>
+                    <div class="row">
+                        <div class="col-2 text-white">
+                            <img class="circle-shape" src="../../images/rl-space.png"
+                                 width="38px"
+                                 height="38px">
+                        </div>
+                        <div class="col">
+                            <span style="font-size: 14px;"><b>Relativity Space</b> <i class="fas fa-check-circle"></i> <br>
+                                @relativityspace<span/>
+                        </div>
+                        <div class="col-1 text-white">
+                            <button type="submit"
+                                    class="btn btn-primary float-right rounded-corners-all-around">
+                                Follow
+                            </button>
 
+                        </div>
 
+                    <span/>
             </li>
             <li class="list-group-item">
-                <img class="circle-shape" src="../../images/virgin.webp"
-                     width="38px"
-                     height="38px">
-                <span>Virgin Galactic<span/>
-                    <button type="submit" class="btn btn-primary float-right rounded-corners-all-around">Follow</button>
+                <span>
+                    <div class="row">
+                        <div class="col-2 text-white">
+                            <img class="circle-shape" src="../../images/virgin.webp"
+                                 width="38px"
+                                 height="38px">
+                        </div>
+                        <div class="col">
+                            <span style="font-size: 14px;"><b>Virign Galactic</b> <i class="fas fa-check-circle"></i> <br>
+                                @virgingalactic<span/>
+                        </div>
+                        <div class="col-1 text-white">
+                            <button type="submit"
+                                    class="btn btn-primary float-right rounded-corners-all-around">
+                                Follow
+                            </button>
 
+                        </div>
 
+                    <span/>
             </li>
             <li class="list-group-item">
-                <img class="circle-shape" src="../../images/nasa.png"
-                     width="38px"
-                     height="38px">
-                <span>NASA<span/>
-                    <button type="submit" class="btn btn-primary float-right rounded-corners-all-around">Follow</button>
+                <span>
+                    <div class="row">
+                        <div class="col-2 text-white">
+                            <img class="circle-shape" src="../../images/nasa.png"
+                                 width="38px"
+                                 height="38px">
+                        </div>
+                        <div class="col">
+                            <span style="font-size: 14px;"><b>NASA</b> <i class="fas fa-check-circle"></i> <br>
+                                @NASA<span/>
+                        </div>
+                        <div class="col-1 text-white">
+                            <button type="submit"
+                                    class="btn btn-primary float-right rounded-corners-all-around">
+                                Follow
+                            </button>
 
+                        </div>
 
+                    <span/>
             </li>
             <li class="list-group-item">
-                <img class="circle-shape" src="../../images/tesla.png"
-                     width="38px"
-                     height="38px">
-                <span> Tesla <span/>
-                    <button type="submit" class="btn btn-primary float-right rounded-corners-all-around">Follow</button>
+                <span>
+                    <div class="row">
+                        <div class="col-2 text-white">
+                            <img class="circle-shape" src="../../images/tesla.png"
+                                 width="38px"
+                                 height="38px">
+                        </div>
+                        <div class="col">
+                            <span style="font-size: 14px;"><b>Tesla</b> <i class="fas fa-check-circle"></i> <br>
+                                @Tesla<span/>
+                        </div>
+                        <div class="col-1 text-white">
+                            <button type="submit"
+                                    class="btn btn-primary float-right rounded-corners-all-around">
+                                Follow
+                            </button>
 
+                        </div>
 
+                    <span/>
             </li>
         </ul>
     </div>
